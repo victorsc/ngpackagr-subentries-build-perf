@@ -1,5 +1,13 @@
 # TreeShakePerf
 
+## Reproduce [ng-packagr issue 1758](https://github.com/ng-packagr/ng-packagr/issues/1758)
+
+```
+yarn && yarn run build // build time ~ 8 seconds
+git checkout sub-entries && yarn run build // build time ~47 seconds
+```
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
 
 ## Development server
